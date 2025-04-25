@@ -24,13 +24,13 @@ Pod::Spec.new do |spec|
 
   spec.author             = { "fancy" => "ptg_all@fancydigital.com.cn" }
 
-  spec.source       = { :git => "https://github.com/PTGAd/PTGOneAdSDK", :tag => "#{spec.version }" }
+  spec.source       = { :git => "https://github.com/PTGAd/PTGOneAdSDK.git", :tag => "#{spec.version }" }
 
 
   spec.platform     = :ios, "11.0"
   spec.frameworks = 'UIKit', 'MapKit', 'WebKit', 'MediaPlayer', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate'
   spec.libraries = 'c++', 'resolv', 'z', 'sqlite3'
-  spec.vendored_frameworks =  'Framework/PTGOneAdSDK.framework'
+  spec.vendored_frameworks =  'Framework/OneAdSDK.framework'
  
 
   valid_archs = ['armv7', 'armv7s', 'x86_64', 'arm64']
